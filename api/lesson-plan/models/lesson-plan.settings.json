@@ -15,6 +15,10 @@
     },
     "description": {
       "type": "richtext"
+    },
+    "author": {
+      "via": "lesson_plans",
+      "model": "author"
     }
   }
 }
