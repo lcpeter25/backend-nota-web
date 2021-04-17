@@ -21,6 +21,10 @@
     "articles": {
       "via": "category",
       "collection": "article"
+    },
+    "authors": {
+      "via": "categories",
+      "collection": "author"
     }
   }
 }

@@ -8,7 +8,8 @@ const {
   homepage,
   writers,
   articles,
-  global
+  global,
+  authors
 } = require("../../data/data.json");
 
 async function isFirstRun() {
@@ -94,6 +95,12 @@ async function createEntry({ model, entry, files }) {
   }
 }
 
+async function importAuthors() {
+  return Promise.all(authors.map((author) => {
+    return createEntry({ model: "author", entry: author });
+  }));
+}
+
 async function importCategories() {
   return Promise.all(categories.map((category) => {
     return createEntry({ model: "category", entry: category });
@@ -148,6 +155,7 @@ async function importSeedData() {
   });
 
   // Create all entries
+  await importAuthors();
   await importCategories();
   await importHomepage();
   await importWriters();
@@ -158,7 +166,7 @@ async function importSeedData() {
 module.exports = async () => {
   const shouldImportSeedData = await isFirstRun();
 
-  if (shouldImportSeedData) {
+  if (true) {
     try {
       console.log('Setting up your starter...');
       await importSeedData();
