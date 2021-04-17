@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/lesson-plans",
+      "handler": "lesson-plan.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lesson-plans/count",
+      "handler": "lesson-plan.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lesson-plans/:id",
+      "handler": "lesson-plan.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lesson-plans",
+      "handler": "lesson-plan.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lesson-plans/:id",
+      "handler": "lesson-plan.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/lesson-plans/:id",
+      "handler": "lesson-plan.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

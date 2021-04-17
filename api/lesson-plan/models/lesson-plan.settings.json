@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lesson_plans",
+  "info": {
+    "name": "Lesson Plan"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

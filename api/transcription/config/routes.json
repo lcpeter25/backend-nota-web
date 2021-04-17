@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/transcriptions",
+      "handler": "transcription.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transcriptions/count",
+      "handler": "transcription.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transcriptions/:id",
+      "handler": "transcription.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/transcriptions",
+      "handler": "transcription.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/transcriptions/:id",
+      "handler": "transcription.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/transcriptions/:id",
+      "handler": "transcription.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
