@@ -17,18 +17,21 @@
     "biography": {
       "type": "richtext"
     },
-    "categories": {
-      "via": "authors",
-      "collection": "category",
-      "dominant": true
-    },
     "transcriptions": {
       "collection": "transcription",
       "via": "author"
     },
-    "lesson_plans": {
+    "lessonPlans": {
       "collection": "lesson-plan",
       "via": "author"
+    },
+    "location": {
+      "model": "author-location",
+      "via": "authors"
+    },
+    "timePeriod": {
+      "model": "time-period",
+      "via": "authors"
     }
   }
 }

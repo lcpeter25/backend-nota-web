@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "time_periods",
+  "info": {
+    "name": "Time Period"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "authors": {
+      "via": "timePeriod",
+      "collection": "author"
+    }
+  }
+}

@@ -20,14 +20,6 @@
       "targetField": "name",
       "required": true
     },
-    "articles": {
-      "collection": "article",
-      "via": "category"
-    },
-    "authors": {
-      "collection": "author",
-      "via": "categories"
-    },
     "description": {
       "type": "text"
     }

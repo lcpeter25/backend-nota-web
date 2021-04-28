@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "author_locations",
+  "info": {
+    "name": "Author Location"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "authors": {
+      "via": "location",
+      "collection": "author"
+    }
+  }
+}
