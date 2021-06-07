@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "field_options",
+  "info": {
+    "name": "Field Option"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "authors": {
+      "collection": "author"
+    },
+    "authorLocations": {
+      "collection": "author-location"
+    },
+    "timePeriods": {
+      "collection": "time-period"
+    }
+  }
+}
