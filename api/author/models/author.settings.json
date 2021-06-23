@@ -22,8 +22,8 @@
       "via": "author"
     },
     "lessonPlans": {
-      "collection": "lesson-plan",
-      "via": "author"
+      "via": "author",
+      "collection": "lesson-plan"
     },
     "location": {
       "model": "author-location",

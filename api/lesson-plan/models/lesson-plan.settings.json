@@ -18,12 +18,15 @@
       "type": "richtext"
     },
     "author": {
-      "via": "lessonPlans",
-      "model": "author"
+      "model": "author",
+      "via": "lessonPlans"
     },
     "price": {
       "model": "price",
       "via": "lessonPlans"
+    },
+    "slug": {
+      "type": "uid"
     }
   }
 }
