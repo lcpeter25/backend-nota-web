@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "digitizations",
+  "info": {
+    "name": "Digitization"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "transcription": {
+      "type": "richtext"
+    }
+  }
+}
