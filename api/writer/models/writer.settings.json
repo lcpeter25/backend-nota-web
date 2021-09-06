@@ -23,6 +23,10 @@
     },
     "email": {
       "type": "string"
+    },
+    "articles": {
+      "via": "writer",
+      "collection": "article"
     }
   }
 }
