@@ -1,9 +1,8 @@
 {
-  "kind": "collectionType",
-  "collectionName": "articles",
+  "kind": "singleType",
+  "collectionName": "footers",
   "info": {
-    "name": "Article",
-    "description": ""
+    "name": "Footer"
   },
   "options": {
     "increments": true,
@@ -14,8 +13,8 @@
     "title": {
       "type": "string"
     },
-    "body": {
-      "type": "richtext"
+    "description": {
+      "type": "string"
     }
   }
 }

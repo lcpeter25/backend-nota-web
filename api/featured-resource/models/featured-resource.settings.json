@@ -1,18 +1,23 @@
 {
-  "collectionName": "components_decoration_heroes",
+  "kind": "collectionType",
+  "collectionName": "featured_resources",
   "info": {
-    "name": "Hero",
-    "icon": "address-card",
-    "description": ""
+    "name": "Featured Resource"
   },
-  "options": {},
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "description": {
       "type": "text"
+    },
+    "url": {
+      "type": "string"
     },
     "image": {
       "model": "file",
