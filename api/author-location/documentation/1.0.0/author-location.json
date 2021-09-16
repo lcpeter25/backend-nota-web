@@ -572,6 +572,9 @@
                 "timePeriod": {
                   "type": "string"
                 },
+                "shortBiography": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },

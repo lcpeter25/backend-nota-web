@@ -575,9 +575,6 @@
                 "title": {
                   "type": "string"
                 },
-                "description": {
-                  "type": "string"
-                },
                 "author": {
                   "type": "string"
                 },
@@ -587,7 +584,7 @@
                 "slug": {
                   "type": "uid"
                 },
-                "url": {
+                "description": {
                   "type": "string"
                 },
                 "published_at": {
@@ -661,6 +658,9 @@
               }
             }
           },
+          "shortBiography": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -691,6 +691,9 @@
             "type": "string"
           },
           "timePeriod": {
+            "type": "string"
+          },
+          "shortBiography": {
             "type": "string"
           },
           "published_at": {

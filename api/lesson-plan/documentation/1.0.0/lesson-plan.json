@@ -538,9 +538,6 @@
           "title": {
             "type": "string"
           },
-          "description": {
-            "type": "string"
-          },
           "author": {
             "required": [
               "id"
@@ -571,6 +568,9 @@
                 "type": "string"
               },
               "timePeriod": {
+                "type": "string"
+              },
+              "shortBiography": {
                 "type": "string"
               },
               "published_at": {
@@ -618,7 +618,7 @@
           "slug": {
             "type": "uid"
           },
-          "url": {
+          "description": {
             "type": "string"
           },
           "published_at": {
@@ -632,9 +632,6 @@
           "title": {
             "type": "string"
           },
-          "description": {
-            "type": "string"
-          },
           "author": {
             "type": "string"
           },
@@ -644,7 +641,7 @@
           "slug": {
             "type": "uid"
           },
-          "url": {
+          "description": {
             "type": "string"
           },
           "published_at": {

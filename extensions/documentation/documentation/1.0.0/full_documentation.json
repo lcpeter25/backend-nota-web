@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/15/2021 9:58:49 PM"
+    "x-generation-date": "09/15/2021 10:05:06 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -11103,6 +11103,9 @@
                 "timePeriod": {
                   "type": "string"
                 },
+                "shortBiography": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -11205,9 +11208,6 @@
                 "title": {
                   "type": "string"
                 },
-                "description": {
-                  "type": "string"
-                },
                 "author": {
                   "type": "string"
                 },
@@ -11217,7 +11217,7 @@
                 "slug": {
                   "type": "uid"
                 },
-                "url": {
+                "description": {
                   "type": "string"
                 },
                 "published_at": {
@@ -11291,6 +11291,9 @@
               }
             }
           },
+          "shortBiography": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -11321,6 +11324,9 @@
             "type": "string"
           },
           "timePeriod": {
+            "type": "string"
+          },
+          "shortBiography": {
             "type": "string"
           },
           "published_at": {
@@ -11484,7 +11490,10 @@
       },
       "Featured-resource": {
         "required": [
-          "id"
+          "id",
+          "title",
+          "url",
+          "image"
         ],
         "properties": {
           "id": {
@@ -11573,6 +11582,10 @@
         }
       },
       "NewFeatured-resource": {
+        "required": [
+          "title",
+          "url"
+        ],
         "properties": {
           "title": {
             "type": "string"
@@ -11635,6 +11648,9 @@
                   "type": "string"
                 },
                 "timePeriod": {
+                  "type": "string"
+                },
+                "shortBiography": {
                   "type": "string"
                 },
                 "published_at": {
@@ -12181,9 +12197,6 @@
           "title": {
             "type": "string"
           },
-          "description": {
-            "type": "string"
-          },
           "author": {
             "required": [
               "id"
@@ -12214,6 +12227,9 @@
                 "type": "string"
               },
               "timePeriod": {
+                "type": "string"
+              },
+              "shortBiography": {
                 "type": "string"
               },
               "published_at": {
@@ -12261,7 +12277,7 @@
           "slug": {
             "type": "uid"
           },
-          "url": {
+          "description": {
             "type": "string"
           },
           "published_at": {
@@ -12275,9 +12291,6 @@
           "title": {
             "type": "string"
           },
-          "description": {
-            "type": "string"
-          },
           "author": {
             "type": "string"
           },
@@ -12287,7 +12300,7 @@
           "slug": {
             "type": "uid"
           },
-          "url": {
+          "description": {
             "type": "string"
           },
           "published_at": {
@@ -12436,9 +12449,6 @@
                 "title": {
                   "type": "string"
                 },
-                "description": {
-                  "type": "string"
-                },
                 "author": {
                   "type": "string"
                 },
@@ -12448,7 +12458,7 @@
                 "slug": {
                   "type": "uid"
                 },
-                "url": {
+                "description": {
                   "type": "string"
                 },
                 "published_at": {
@@ -12687,6 +12697,9 @@
                 "timePeriod": {
                   "type": "string"
                 },
+                "shortBiography": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -12842,6 +12855,9 @@
                 "type": "string"
               },
               "timePeriod": {
+                "type": "string"
+              },
+              "shortBiography": {
                 "type": "string"
               },
               "published_at": {

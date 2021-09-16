@@ -529,7 +529,10 @@
     "schemas": {
       "Featured-resource": {
         "required": [
-          "id"
+          "id",
+          "title",
+          "url",
+          "image"
         ],
         "properties": {
           "id": {
@@ -618,6 +621,10 @@
         }
       },
       "NewFeatured-resource": {
+        "required": [
+          "title",
+          "url"
+        ],
         "properties": {
           "title": {
             "type": "string"

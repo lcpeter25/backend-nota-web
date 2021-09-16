@@ -541,9 +541,6 @@
                 "title": {
                   "type": "string"
                 },
-                "description": {
-                  "type": "string"
-                },
                 "author": {
                   "type": "string"
                 },
@@ -553,7 +550,7 @@
                 "slug": {
                   "type": "uid"
                 },
-                "url": {
+                "description": {
                   "type": "string"
                 },
                 "published_at": {

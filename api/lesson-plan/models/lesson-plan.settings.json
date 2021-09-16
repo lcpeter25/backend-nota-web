@@ -14,12 +14,9 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
     "author": {
-      "model": "author",
-      "via": "lessonPlans"
+      "via": "lessonPlans",
+      "model": "author"
     },
     "price": {
       "model": "price",
@@ -28,8 +25,8 @@
     "slug": {
       "type": "uid"
     },
-    "url": {
-      "type": "string"
+    "description": {
+      "type": "text"
     }
   }
 }

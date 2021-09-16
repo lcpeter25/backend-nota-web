@@ -32,6 +32,9 @@
     "timePeriod": {
       "model": "time-period",
       "via": "authors"
+    },
+    "shortBiography": {
+      "type": "text"
     }
   }
 }
