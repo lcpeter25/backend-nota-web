@@ -1,26 +1,28 @@
 {
-  "collectionName": "components_decoration_heroes",
+  "kind": "singleType",
+  "collectionName": "homes",
   "info": {
-    "name": "Hero",
-    "icon": "address-card",
-    "description": ""
+    "name": "Home"
   },
-  "options": {},
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true,
-      "unique": false
+      "type": "string"
     },
     "description": {
-      "type": "text",
-      "unique": false
+      "type": "text"
     },
     "image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images"
+        "images",
+        "files",
+        "videos"
       ],
       "plugin": "upload",
       "required": false,
