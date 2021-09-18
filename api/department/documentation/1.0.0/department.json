@@ -595,6 +595,43 @@
               }
             }
           },
+          "teamMembers": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "biography": {
+                  "type": "string"
+                },
+                "position": {
+                  "type": "string"
+                },
+                "department": {
+                  "type": "string"
+                },
+                "picture": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -608,6 +645,12 @@
           },
           "description": {
             "type": "string"
+          },
+          "teamMembers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

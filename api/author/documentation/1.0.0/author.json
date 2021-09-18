@@ -516,7 +516,8 @@
     "schemas": {
       "Author": {
         "required": [
-          "id"
+          "id",
+          "shortBiography"
         ],
         "properties": {
           "id": {
@@ -665,6 +666,10 @@
             }
           },
           "shortBiography": {
+            "type": "string",
+            "maxLength": 500
+          },
+          "date": {
             "type": "string"
           },
           "published_at": {
@@ -674,6 +679,9 @@
         }
       },
       "NewAuthor": {
+        "required": [
+          "shortBiography"
+        ],
         "properties": {
           "name": {
             "type": "string"
@@ -700,6 +708,10 @@
             "type": "string"
           },
           "shortBiography": {
+            "type": "string",
+            "maxLength": 500
+          },
+          "date": {
             "type": "string"
           },
           "published_at": {

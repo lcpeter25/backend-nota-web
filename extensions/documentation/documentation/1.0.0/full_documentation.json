@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/18/2021 1:15:50 AM"
+    "x-generation-date": "09/18/2021 11:48:57 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -11073,7 +11073,8 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "shortBiography"
               ],
               "properties": {
                 "id": {
@@ -11104,6 +11105,9 @@
                   "type": "string"
                 },
                 "shortBiography": {
+                  "type": "string"
+                },
+                "date": {
                   "type": "string"
                 },
                 "published_at": {
@@ -11149,7 +11153,8 @@
       },
       "Author": {
         "required": [
-          "id"
+          "id",
+          "shortBiography"
         ],
         "properties": {
           "id": {
@@ -11298,6 +11303,10 @@
             }
           },
           "shortBiography": {
+            "type": "string",
+            "maxLength": 500
+          },
+          "date": {
             "type": "string"
           },
           "published_at": {
@@ -11307,6 +11316,9 @@
         }
       },
       "NewAuthor": {
+        "required": [
+          "shortBiography"
+        ],
         "properties": {
           "name": {
             "type": "string"
@@ -11333,6 +11345,10 @@
             "type": "string"
           },
           "shortBiography": {
+            "type": "string",
+            "maxLength": 500
+          },
+          "date": {
             "type": "string"
           },
           "published_at": {
@@ -11428,6 +11444,43 @@
               }
             }
           },
+          "teamMembers": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "biography": {
+                  "type": "string"
+                },
+                "position": {
+                  "type": "string"
+                },
+                "department": {
+                  "type": "string"
+                },
+                "picture": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -11441,6 +11494,12 @@
           },
           "description": {
             "type": "string"
+          },
+          "teamMembers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",
@@ -11626,7 +11685,8 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "shortBiography"
               ],
               "properties": {
                 "id": {
@@ -11657,6 +11717,9 @@
                   "type": "string"
                 },
                 "shortBiography": {
+                  "type": "string"
+                },
+                "date": {
                   "type": "string"
                 },
                 "published_at": {
@@ -12087,7 +12150,9 @@
       },
       "Home": {
         "required": [
-          "id"
+          "id",
+          "description",
+          "image"
         ],
         "properties": {
           "id": {
@@ -12097,7 +12162,8 @@
             "type": "string"
           },
           "description": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 250
           },
           "image": {
             "required": [
@@ -12173,12 +12239,16 @@
         }
       },
       "NewHome": {
+        "required": [
+          "description"
+        ],
         "properties": {
           "title": {
             "type": "string"
           },
           "description": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 250
           },
           "published_at": {
             "type": "string",
@@ -12205,7 +12275,8 @@
           },
           "author": {
             "required": [
-              "id"
+              "id",
+              "shortBiography"
             ],
             "properties": {
               "id": {
@@ -12236,6 +12307,9 @@
                 "type": "string"
               },
               "shortBiography": {
+                "type": "string"
+              },
+              "date": {
                 "type": "string"
               },
               "published_at": {
@@ -12621,6 +12695,12 @@
               "image": {
                 "type": "string"
               },
+              "teamMembers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -12749,7 +12829,8 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "shortBiography"
               ],
               "properties": {
                 "id": {
@@ -12780,6 +12861,9 @@
                   "type": "string"
                 },
                 "shortBiography": {
+                  "type": "string"
+                },
+                "date": {
                   "type": "string"
                 },
                 "published_at": {
@@ -12909,7 +12993,8 @@
           },
           "author": {
             "required": [
-              "id"
+              "id",
+              "shortBiography"
             ],
             "properties": {
               "id": {
@@ -12940,6 +13025,9 @@
                 "type": "string"
               },
               "shortBiography": {
+                "type": "string"
+              },
+              "date": {
                 "type": "string"
               },
               "published_at": {

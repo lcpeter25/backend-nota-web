@@ -34,7 +34,12 @@
       "via": "authors"
     },
     "shortBiography": {
-      "type": "text"
+      "type": "text",
+      "maxLength": 500,
+      "required": true
+    },
+    "date": {
+      "type": "string"
     }
   }
 }

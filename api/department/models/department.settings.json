@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "departments",
   "info": {
-    "name": "Department"
+    "name": "Department",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -27,6 +28,9 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "teamMembers": {
+      "collection": "team-member"
     }
   }
 }

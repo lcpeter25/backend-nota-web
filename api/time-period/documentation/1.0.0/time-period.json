@@ -545,7 +545,8 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "shortBiography"
               ],
               "properties": {
                 "id": {
@@ -576,6 +577,9 @@
                   "type": "string"
                 },
                 "shortBiography": {
+                  "type": "string"
+                },
+                "date": {
                   "type": "string"
                 },
                 "published_at": {
