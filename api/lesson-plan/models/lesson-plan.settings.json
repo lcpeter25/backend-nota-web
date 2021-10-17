@@ -14,9 +14,10 @@
     "title": {
       "type": "string"
     },
-    "author": {
+    "authors": {
+      "collection": "author",
       "via": "lessonPlans",
-      "model": "author"
+      "dominant": true
     },
     "price": {
       "model": "price",

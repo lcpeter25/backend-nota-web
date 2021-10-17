@@ -541,8 +541,11 @@
                 "title": {
                   "type": "string"
                 },
-                "author": {
-                  "type": "string"
+                "authors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "price": {
                   "type": "string"

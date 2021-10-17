@@ -21,10 +21,6 @@
       "collection": "transcription",
       "via": "author"
     },
-    "lessonPlans": {
-      "via": "author",
-      "collection": "lesson-plan"
-    },
     "location": {
       "model": "author-location",
       "via": "authors"
@@ -40,6 +36,10 @@
     },
     "date": {
       "type": "string"
+    },
+    "lessonPlans": {
+      "via": "authors",
+      "collection": "lesson-plan"
     }
   }
 }

@@ -563,46 +563,6 @@
               }
             }
           },
-          "lessonPlans": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "author": {
-                  "type": "string"
-                },
-                "price": {
-                  "type": "string"
-                },
-                "slug": {
-                  "type": "uid"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "link": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "location": {
             "required": [
               "id"
@@ -669,6 +629,49 @@
           "date": {
             "type": "string"
           },
+          "lessonPlans": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "authors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "price": {
+                  "type": "string"
+                },
+                "slug": {
+                  "type": "uid"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -692,12 +695,6 @@
               "type": "string"
             }
           },
-          "lessonPlans": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
           "location": {
             "type": "string"
           },
@@ -710,6 +707,12 @@
           },
           "date": {
             "type": "string"
+          },
+          "lessonPlans": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

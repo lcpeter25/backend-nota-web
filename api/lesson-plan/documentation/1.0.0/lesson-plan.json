@@ -538,53 +538,56 @@
           "title": {
             "type": "string"
           },
-          "author": {
-            "required": [
-              "id",
-              "shortBiography"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "biography": {
-                "type": "string"
-              },
-              "transcriptions": {
-                "type": "array",
-                "items": {
+          "authors": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "shortBiography"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "biography": {
+                  "type": "string"
+                },
+                "transcriptions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "location": {
+                  "type": "string"
+                },
+                "timePeriod": {
+                  "type": "string"
+                },
+                "shortBiography": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string"
+                },
+                "lessonPlans": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
                   "type": "string"
                 }
-              },
-              "lessonPlans": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "location": {
-                "type": "string"
-              },
-              "timePeriod": {
-                "type": "string"
-              },
-              "shortBiography": {
-                "type": "string"
-              },
-              "date": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
               }
             }
           },
@@ -639,8 +642,11 @@
           "title": {
             "type": "string"
           },
-          "author": {
-            "type": "string"
+          "authors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "price": {
             "type": "string"
