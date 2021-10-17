@@ -588,11 +588,8 @@
                 "description": {
                   "type": "string"
                 },
-                "files": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                "link": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
