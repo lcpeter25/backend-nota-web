@@ -550,9 +550,6 @@
                 "price": {
                   "type": "string"
                 },
-                "slug": {
-                  "type": "uid"
-                },
                 "description": {
                   "type": "string"
                 },

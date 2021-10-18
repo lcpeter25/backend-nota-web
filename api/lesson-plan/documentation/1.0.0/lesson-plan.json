@@ -622,9 +622,6 @@
               }
             }
           },
-          "slug": {
-            "type": "uid"
-          },
           "description": {
             "type": "string"
           },
@@ -650,9 +647,6 @@
           },
           "price": {
             "type": "string"
-          },
-          "slug": {
-            "type": "uid"
           },
           "description": {
             "type": "string"

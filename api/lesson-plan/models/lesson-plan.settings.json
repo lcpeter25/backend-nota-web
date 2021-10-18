@@ -23,9 +23,6 @@
       "model": "price",
       "via": "lessonPlans"
     },
-    "slug": {
-      "type": "uid"
-    },
     "description": {
       "type": "text"
     },
