@@ -20,6 +20,16 @@
     "language": {
       "model": "translation-language",
       "via": "translations"
+    },
+    "link": {
+      "type": "string"
+    },
+    "author": {
+      "model": "author",
+      "via": "translations"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }

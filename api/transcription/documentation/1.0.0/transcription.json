@@ -522,77 +522,7 @@
           "id": {
             "type": "string"
           },
-          "media": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "alternativeText": {
-                  "type": "string"
-                },
-                "caption": {
-                  "type": "string"
-                },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "formats": {
-                  "type": "object"
-                },
-                "hash": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "previewUrl": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "content": {
+          "body": {
             "type": "string"
           },
           "author": {
@@ -616,12 +546,6 @@
                   "type": "string"
                 }
               },
-              "lessonPlans": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "location": {
                 "type": "string"
               },
@@ -634,6 +558,18 @@
               "date": {
                 "type": "string"
               },
+              "lessonPlans": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "translations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -645,6 +581,18 @@
               }
             }
           },
+          "link": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -653,10 +601,22 @@
       },
       "NewTranscription": {
         "properties": {
-          "content": {
+          "body": {
             "type": "string"
           },
           "author": {
+            "type": "string"
+          },
+          "link": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "title": {
             "type": "string"
           },
           "published_at": {

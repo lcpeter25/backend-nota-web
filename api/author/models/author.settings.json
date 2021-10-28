@@ -18,8 +18,8 @@
       "type": "richtext"
     },
     "transcriptions": {
-      "collection": "transcription",
-      "via": "author"
+      "via": "author",
+      "collection": "transcription"
     },
     "location": {
       "model": "author-location",
@@ -40,6 +40,10 @@
     "lessonPlans": {
       "via": "authors",
       "collection": "lesson-plan"
+    },
+    "translations": {
+      "via": "author",
+      "collection": "translation"
     }
   }
 }

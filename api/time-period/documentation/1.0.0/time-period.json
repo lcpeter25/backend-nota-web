@@ -564,12 +564,6 @@
                     "type": "string"
                   }
                 },
-                "lessonPlans": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "location": {
                   "type": "string"
                 },
@@ -581,6 +575,18 @@
                 },
                 "date": {
                   "type": "string"
+                },
+                "lessonPlans": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "translations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"

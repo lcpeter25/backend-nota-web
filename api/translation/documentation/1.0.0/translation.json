@@ -556,6 +556,68 @@
               }
             }
           },
+          "link": {
+            "type": "string"
+          },
+          "author": {
+            "required": [
+              "id",
+              "shortBiography"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "biography": {
+                "type": "string"
+              },
+              "transcriptions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "location": {
+                "type": "string"
+              },
+              "timePeriod": {
+                "type": "string"
+              },
+              "shortBiography": {
+                "type": "string"
+              },
+              "date": {
+                "type": "string"
+              },
+              "lessonPlans": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "translations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "description": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -571,6 +633,15 @@
             "type": "string"
           },
           "language": {
+            "type": "string"
+          },
+          "link": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          },
+          "description": {
             "type": "string"
           },
           "published_at": {

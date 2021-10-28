@@ -539,16 +539,22 @@
                 "id": {
                   "type": "string"
                 },
-                "media": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "content": {
+                "body": {
                   "type": "string"
                 },
                 "author": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string"
+                },
+                "title": {
                   "type": "string"
                 },
                 "published_at": {
@@ -669,6 +675,46 @@
               }
             }
           },
+          "translations": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "body": {
+                  "type": "string"
+                },
+                "language": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                },
+                "author": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -706,6 +752,12 @@
             "type": "string"
           },
           "lessonPlans": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "translations": {
             "type": "array",
             "items": {
               "type": "string"

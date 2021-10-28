@@ -11,23 +11,24 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "media": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
-    "content": {
+    "body": {
       "type": "richtext"
     },
     "author": {
       "via": "transcriptions",
       "model": "author"
+    },
+    "link": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "date": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }

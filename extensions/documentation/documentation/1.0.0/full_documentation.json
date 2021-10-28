@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/17/2021 8:10:11 PM"
+    "x-generation-date": "10/27/2021 11:27:41 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -10581,12 +10581,6 @@
                     "type": "string"
                   }
                 },
-                "lessonPlans": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "location": {
                   "type": "string"
                 },
@@ -10598,6 +10592,18 @@
                 },
                 "date": {
                   "type": "string"
+                },
+                "lessonPlans": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "translations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -10665,16 +10671,22 @@
                 "id": {
                   "type": "string"
                 },
-                "media": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "content": {
+                "body": {
                   "type": "string"
                 },
                 "author": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string"
+                },
+                "title": {
                   "type": "string"
                 },
                 "published_at": {
@@ -10795,6 +10807,46 @@
               }
             }
           },
+          "translations": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "body": {
+                  "type": "string"
+                },
+                "language": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                },
+                "author": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -10832,6 +10884,12 @@
             "type": "string"
           },
           "lessonPlans": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "translations": {
             "type": "array",
             "items": {
               "type": "string"
@@ -11150,12 +11208,6 @@
                     "type": "string"
                   }
                 },
-                "lessonPlans": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "location": {
                   "type": "string"
                 },
@@ -11167,6 +11219,18 @@
                 },
                 "date": {
                   "type": "string"
+                },
+                "lessonPlans": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "translations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -11760,6 +11824,12 @@
                     "type": "string"
                   }
                 },
+                "translations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -12227,12 +12297,6 @@
                     "type": "string"
                   }
                 },
-                "lessonPlans": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "location": {
                   "type": "string"
                 },
@@ -12244,6 +12308,18 @@
                 },
                 "date": {
                   "type": "string"
+                },
+                "lessonPlans": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "translations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -12297,77 +12373,7 @@
           "id": {
             "type": "string"
           },
-          "media": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "alternativeText": {
-                  "type": "string"
-                },
-                "caption": {
-                  "type": "string"
-                },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "formats": {
-                  "type": "object"
-                },
-                "hash": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "previewUrl": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "content": {
+          "body": {
             "type": "string"
           },
           "author": {
@@ -12391,12 +12397,6 @@
                   "type": "string"
                 }
               },
-              "lessonPlans": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "location": {
                 "type": "string"
               },
@@ -12409,6 +12409,18 @@
               "date": {
                 "type": "string"
               },
+              "lessonPlans": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "translations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -12420,6 +12432,18 @@
               }
             }
           },
+          "link": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -12428,10 +12452,22 @@
       },
       "NewTranscription": {
         "properties": {
-          "content": {
+          "body": {
             "type": "string"
           },
           "author": {
+            "type": "string"
+          },
+          "link": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "title": {
             "type": "string"
           },
           "published_at": {
@@ -12474,6 +12510,15 @@
                   "type": "string"
                 },
                 "language": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                },
+                "author": {
+                  "type": "string"
+                },
+                "description": {
                   "type": "string"
                 },
                 "published_at": {
@@ -12559,6 +12604,68 @@
               }
             }
           },
+          "link": {
+            "type": "string"
+          },
+          "author": {
+            "required": [
+              "id",
+              "shortBiography"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "biography": {
+                "type": "string"
+              },
+              "transcriptions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "location": {
+                "type": "string"
+              },
+              "timePeriod": {
+                "type": "string"
+              },
+              "shortBiography": {
+                "type": "string"
+              },
+              "date": {
+                "type": "string"
+              },
+              "lessonPlans": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "translations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "description": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -12574,6 +12681,15 @@
             "type": "string"
           },
           "language": {
+            "type": "string"
+          },
+          "link": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          },
+          "description": {
             "type": "string"
           },
           "published_at": {

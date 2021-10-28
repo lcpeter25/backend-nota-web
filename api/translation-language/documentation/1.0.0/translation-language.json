@@ -557,6 +557,15 @@
                 "language": {
                   "type": "string"
                 },
+                "link": {
+                  "type": "string"
+                },
+                "author": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
