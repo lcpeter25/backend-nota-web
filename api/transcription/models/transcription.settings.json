@@ -29,6 +29,13 @@
     },
     "title": {
       "type": "string"
+    },
+    "originalTextLink": {
+      "type": "string"
+    },
+    "translation": {
+      "model": "translation",
+      "via": "transcription"
     }
   }
 }

@@ -30,6 +30,10 @@
     },
     "description": {
       "type": "text"
+    },
+    "transcription": {
+      "via": "translation",
+      "model": "transcription"
     }
   }
 }

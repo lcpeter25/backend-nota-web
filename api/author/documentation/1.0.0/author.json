@@ -557,6 +557,12 @@
                 "title": {
                   "type": "string"
                 },
+                "originalTextLink": {
+                  "type": "string"
+                },
+                "translation": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -701,6 +707,9 @@
                   "type": "string"
                 },
                 "description": {
+                  "type": "string"
+                },
+                "transcription": {
                   "type": "string"
                 },
                 "published_at": {

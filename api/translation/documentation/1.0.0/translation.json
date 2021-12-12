@@ -618,6 +618,49 @@
           "description": {
             "type": "string"
           },
+          "transcription": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "body": {
+                "type": "string"
+              },
+              "author": {
+                "type": "string"
+              },
+              "link": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "date": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "originalTextLink": {
+                "type": "string"
+              },
+              "translation": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -642,6 +685,9 @@
             "type": "string"
           },
           "description": {
+            "type": "string"
+          },
+          "transcription": {
             "type": "string"
           },
           "published_at": {

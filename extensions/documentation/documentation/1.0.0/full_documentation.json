@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/27/2021 11:27:41 PM"
+    "x-generation-date": "12/12/2021 3:45:43 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -10689,6 +10689,12 @@
                 "title": {
                   "type": "string"
                 },
+                "originalTextLink": {
+                  "type": "string"
+                },
+                "translation": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -10833,6 +10839,9 @@
                   "type": "string"
                 },
                 "description": {
+                  "type": "string"
+                },
+                "transcription": {
                   "type": "string"
                 },
                 "published_at": {
@@ -12444,6 +12453,49 @@
           "title": {
             "type": "string"
           },
+          "originalTextLink": {
+            "type": "string"
+          },
+          "translation": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "body": {
+                "type": "string"
+              },
+              "language": {
+                "type": "string"
+              },
+              "link": {
+                "type": "string"
+              },
+              "author": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "transcription": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -12468,6 +12520,12 @@
             "type": "string"
           },
           "title": {
+            "type": "string"
+          },
+          "originalTextLink": {
+            "type": "string"
+          },
+          "translation": {
             "type": "string"
           },
           "published_at": {
@@ -12519,6 +12577,9 @@
                   "type": "string"
                 },
                 "description": {
+                  "type": "string"
+                },
+                "transcription": {
                   "type": "string"
                 },
                 "published_at": {
@@ -12666,6 +12727,49 @@
           "description": {
             "type": "string"
           },
+          "transcription": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "body": {
+                "type": "string"
+              },
+              "author": {
+                "type": "string"
+              },
+              "link": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "date": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "originalTextLink": {
+                "type": "string"
+              },
+              "translation": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -12690,6 +12794,9 @@
             "type": "string"
           },
           "description": {
+            "type": "string"
+          },
+          "transcription": {
             "type": "string"
           },
           "published_at": {
