@@ -34,8 +34,11 @@
       "type": "string"
     },
     "translation": {
-      "model": "translation",
-      "via": "transcription"
+      "via": "transcription",
+      "model": "translation"
+    },
+    "originalText": {
+      "type": "string"
     }
   }
 }

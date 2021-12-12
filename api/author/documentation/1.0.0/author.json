@@ -563,6 +563,9 @@
                 "translation": {
                   "type": "string"
                 },
+                "originalText": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -710,6 +713,9 @@
                   "type": "string"
                 },
                 "transcription": {
+                  "type": "string"
+                },
+                "acknowledgement": {
                   "type": "string"
                 },
                 "published_at": {

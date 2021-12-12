@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/12/2021 3:45:43 PM"
+    "x-generation-date": "12/12/2021 4:44:21 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -10695,6 +10695,9 @@
                 "translation": {
                   "type": "string"
                 },
+                "originalText": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -10842,6 +10845,9 @@
                   "type": "string"
                 },
                 "transcription": {
+                  "type": "string"
+                },
+                "acknowledgement": {
                   "type": "string"
                 },
                 "published_at": {
@@ -12485,6 +12491,9 @@
               "transcription": {
                 "type": "string"
               },
+              "acknowledgement": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -12495,6 +12504,9 @@
                 "type": "string"
               }
             }
+          },
+          "originalText": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -12526,6 +12538,9 @@
             "type": "string"
           },
           "translation": {
+            "type": "string"
+          },
+          "originalText": {
             "type": "string"
           },
           "published_at": {
@@ -12580,6 +12595,9 @@
                   "type": "string"
                 },
                 "transcription": {
+                  "type": "string"
+                },
+                "acknowledgement": {
                   "type": "string"
                 },
                 "published_at": {
@@ -12759,6 +12777,9 @@
               "translation": {
                 "type": "string"
               },
+              "originalText": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -12769,6 +12790,9 @@
                 "type": "string"
               }
             }
+          },
+          "acknowledgement": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -12797,6 +12821,9 @@
             "type": "string"
           },
           "transcription": {
+            "type": "string"
+          },
+          "acknowledgement": {
             "type": "string"
           },
           "published_at": {
