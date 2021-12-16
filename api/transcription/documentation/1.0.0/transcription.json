@@ -596,46 +596,49 @@
           "originalTextLink": {
             "type": "string"
           },
-          "translation": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "title": {
-                "type": "string"
-              },
-              "body": {
-                "type": "string"
-              },
-              "language": {
-                "type": "string"
-              },
-              "link": {
-                "type": "string"
-              },
-              "author": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "transcription": {
-                "type": "string"
-              },
-              "acknowledgement": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
+          "translations": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "body": {
+                  "type": "string"
+                },
+                "language": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                },
+                "author": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "acknowledgement": {
+                  "type": "string"
+                },
+                "transcription": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
               }
             }
           },
@@ -671,8 +674,11 @@
           "originalTextLink": {
             "type": "string"
           },
-          "translation": {
-            "type": "string"
+          "translations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "originalText": {
             "type": "string"

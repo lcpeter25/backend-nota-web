@@ -618,6 +618,9 @@
           "description": {
             "type": "string"
           },
+          "acknowledgement": {
+            "type": "string"
+          },
           "transcription": {
             "required": [
               "id"
@@ -647,8 +650,11 @@
               "originalTextLink": {
                 "type": "string"
               },
-              "translation": {
-                "type": "string"
+              "translations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "originalText": {
                 "type": "string"
@@ -663,9 +669,6 @@
                 "type": "string"
               }
             }
-          },
-          "acknowledgement": {
-            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -693,10 +696,10 @@
           "description": {
             "type": "string"
           },
-          "transcription": {
+          "acknowledgement": {
             "type": "string"
           },
-          "acknowledgement": {
+          "transcription": {
             "type": "string"
           },
           "published_at": {

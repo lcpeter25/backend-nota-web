@@ -33,9 +33,9 @@
     "originalTextLink": {
       "type": "string"
     },
-    "translation": {
-      "via": "transcription",
-      "model": "translation"
+    "translations": {
+      "collection": "translation",
+      "via": "transcription"
     },
     "originalText": {
       "type": "string"

@@ -31,12 +31,12 @@
     "description": {
       "type": "text"
     },
-    "transcription": {
-      "via": "translation",
-      "model": "transcription"
-    },
     "acknowledgement": {
       "type": "text"
+    },
+    "transcription": {
+      "via": "translations",
+      "model": "transcription"
     }
   }
 }
