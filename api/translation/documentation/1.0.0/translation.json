@@ -623,7 +623,8 @@
           },
           "transcription": {
             "required": [
-              "id"
+              "id",
+              "title"
             ],
             "properties": {
               "id": {

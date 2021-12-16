@@ -516,7 +516,8 @@
     "schemas": {
       "Transcription": {
         "required": [
-          "id"
+          "id",
+          "title"
         ],
         "properties": {
           "id": {
@@ -652,6 +653,9 @@
         }
       },
       "NewTranscription": {
+        "required": [
+          "title"
+        ],
         "properties": {
           "body": {
             "type": "string"

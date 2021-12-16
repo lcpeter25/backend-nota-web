@@ -28,7 +28,8 @@
       "type": "string"
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "originalTextLink": {
       "type": "string"
