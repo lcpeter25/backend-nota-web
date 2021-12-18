@@ -29,7 +29,8 @@
       "required": false,
       "pluginOptions": {}
     },
-    "teamMembers": {
+    "team_members": {
+      "via": "department",
       "collection": "team-member"
     }
   }

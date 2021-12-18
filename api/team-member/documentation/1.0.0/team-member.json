@@ -561,7 +561,7 @@
               "image": {
                 "type": "string"
               },
-              "teamMembers": {
+              "team_members": {
                 "type": "array",
                 "items": {
                   "type": "string"
