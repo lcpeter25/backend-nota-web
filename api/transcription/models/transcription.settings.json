@@ -40,6 +40,14 @@
     },
     "originalText": {
       "type": "string"
+    },
+    "themes": {
+      "via": "transcriptions",
+      "collection": "theme"
+    },
+    "literary_genres": {
+      "via": "transcriptions",
+      "collection": "literary-genre"
     }
   }
 }

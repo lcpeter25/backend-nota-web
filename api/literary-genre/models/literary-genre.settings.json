@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "literary_genres",
+  "info": {
+    "name": "Literary Genre"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "transcriptions": {
+      "collection": "transcription",
+      "via": "literary_genres",
+      "dominant": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

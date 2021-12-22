@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/translations": {
+    "/themes": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Translation"
+                    "$ref": "#/components/schemas/Theme"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Translation"
+          "Theme"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Translation"
+                  "$ref": "#/components/schemas/Theme"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Translation"
+          "Theme"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTranslation"
+                "$ref": "#/components/schemas/NewTheme"
               }
             }
           }
         }
       }
     },
-    "/translations/count": {
+    "/themes/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Translation"
+          "Theme"
         ],
         "parameters": []
       }
     },
-    "/translations/{id}": {
+    "/themes/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Translation"
+                  "$ref": "#/components/schemas/Theme"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Translation"
+          "Theme"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Translation"
+                  "$ref": "#/components/schemas/Theme"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Translation"
+          "Theme"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTranslation"
+                "$ref": "#/components/schemas/NewTheme"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Translation"
+          "Theme"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Translation": {
+      "Theme": {
         "required": [
           "id"
         ],
@@ -525,161 +525,71 @@
           "title": {
             "type": "string"
           },
-          "body": {
-            "type": "string"
-          },
-          "language": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "translations": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "link": {
-            "type": "string"
-          },
-          "author": {
-            "required": [
-              "id",
-              "shortBiography"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "biography": {
-                "type": "string"
-              },
-              "transcriptions": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "location": {
-                "type": "string"
-              },
-              "timePeriod": {
-                "type": "string"
-              },
-              "shortBiography": {
-                "type": "string"
-              },
-              "date": {
-                "type": "string"
-              },
-              "lessonPlans": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "translations": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "description": {
             "type": "string"
           },
-          "acknowledgement": {
-            "type": "string"
-          },
-          "transcription": {
-            "required": [
-              "id",
-              "title"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "body": {
-                "type": "string"
-              },
-              "author": {
-                "type": "string"
-              },
-              "link": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "date": {
-                "type": "string"
-              },
-              "title": {
-                "type": "string"
-              },
-              "originalTextLink": {
-                "type": "string"
-              },
-              "translations": {
-                "type": "array",
-                "items": {
+          "transcriptions": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "title"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "body": {
+                  "type": "string"
+                },
+                "author": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "originalTextLink": {
+                  "type": "string"
+                },
+                "translations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "originalText": {
+                  "type": "string"
+                },
+                "themes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "literary_genres": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
                   "type": "string"
                 }
-              },
-              "originalText": {
-                "type": "string"
-              },
-              "themes": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "literary_genres": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
               }
             }
           },
@@ -689,31 +599,19 @@
           }
         }
       },
-      "NewTranslation": {
+      "NewTheme": {
         "properties": {
           "title": {
-            "type": "string"
-          },
-          "body": {
-            "type": "string"
-          },
-          "language": {
-            "type": "string"
-          },
-          "link": {
-            "type": "string"
-          },
-          "author": {
             "type": "string"
           },
           "description": {
             "type": "string"
           },
-          "acknowledgement": {
-            "type": "string"
-          },
-          "transcription": {
-            "type": "string"
+          "transcriptions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",
@@ -731,7 +629,7 @@
   },
   "tags": [
     {
-      "name": "Translation"
+      "name": "Theme"
     }
   ]
 }

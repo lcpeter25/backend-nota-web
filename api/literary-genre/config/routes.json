@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/literary-genres",
+      "handler": "literary-genre.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/literary-genres/count",
+      "handler": "literary-genre.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/literary-genres/:id",
+      "handler": "literary-genre.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/literary-genres",
+      "handler": "literary-genre.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/literary-genres/:id",
+      "handler": "literary-genre.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/literary-genres/:id",
+      "handler": "literary-genre.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

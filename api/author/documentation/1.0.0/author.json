@@ -570,6 +570,18 @@
                 "originalText": {
                   "type": "string"
                 },
+                "themes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "literary_genres": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "published_at": {
                   "type": "string"
                 },
