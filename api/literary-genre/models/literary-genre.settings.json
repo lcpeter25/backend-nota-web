@@ -12,8 +12,8 @@
   "pluginOptions": {},
   "attributes": {
     "transcriptions": {
-      "collection": "transcription",
       "via": "literary_genres",
+      "collection": "transcription",
       "dominant": true
     },
     "title": {

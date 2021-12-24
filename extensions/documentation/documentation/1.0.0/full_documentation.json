@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/18/2021 11:35:40 AM"
+    "x-generation-date": "12/24/2021 12:31:26 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -11640,6 +11640,9 @@
                     "type": "string"
                   }
                 },
+                "acknowledgement": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -11748,6 +11751,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "acknowledgement": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -11913,6 +11919,9 @@
               }
             }
           },
+          "acknowledgement": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -11960,6 +11969,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "acknowledgement": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -12297,6 +12309,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "acknowledgement": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -12896,6 +12911,9 @@
                     "type": "string"
                   }
                 },
+                "acknowledgement": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -13043,6 +13061,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "acknowledgement": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -13504,6 +13525,9 @@
                     "type": "string"
                   }
                 },
+                "acknowledgement": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -13609,6 +13633,9 @@
                     "type": "string"
                   }
                 },
+                "acknowledgement": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -13709,6 +13736,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "acknowledgement": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -13853,6 +13883,9 @@
               }
             }
           },
+          "acknowledgement": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -13905,6 +13938,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "acknowledgement": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -14094,6 +14130,9 @@
                   "type": "string"
                 }
               },
+              "acknowledgement": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -14161,6 +14200,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "acknowledgement": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"

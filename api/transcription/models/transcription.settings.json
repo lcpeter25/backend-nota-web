@@ -48,6 +48,9 @@
     "literary_genres": {
       "via": "transcriptions",
       "collection": "literary-genre"
+    },
+    "acknowledgement": {
+      "type": "text"
     }
   }
 }

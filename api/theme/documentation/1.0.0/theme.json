@@ -581,6 +581,9 @@
                     "type": "string"
                   }
                 },
+                "acknowledgement": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
