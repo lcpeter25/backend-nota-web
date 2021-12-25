@@ -5,4 +5,14 @@
  * to customize this service
  */
 
-module.exports = {};
+module.exports = {
+
+  find(params, populate) {
+    return strapi.query('translation').find(params, ["transcription", "transcription.literary_genres", "transcription.themes"]);
+  },
+  findOne(params, populate) {
+    return strapi.query('translation').find(params, ["transcription", "transcription.literary_genres", "transcription.themes"]);
+  },
+
+
+};
