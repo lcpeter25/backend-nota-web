@@ -28,6 +28,9 @@
     },
     "link": {
       "type": "string"
+    },
+    "language": {
+      "model": "translation-language"
     }
   }
 }

@@ -691,6 +691,9 @@
                 "link": {
                   "type": "string"
                 },
+                "language": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },

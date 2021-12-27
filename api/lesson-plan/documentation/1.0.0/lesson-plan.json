@@ -637,6 +637,34 @@
           "link": {
             "type": "string"
           },
+          "language": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "translations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -661,6 +689,9 @@
             "type": "string"
           },
           "link": {
+            "type": "string"
+          },
+          "language": {
             "type": "string"
           },
           "published_at": {
