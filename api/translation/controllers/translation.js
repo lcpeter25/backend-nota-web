@@ -22,7 +22,44 @@ module.exports = {
       delete translation.created_at;
       delete translation.updated_at;
 
+      if (translation.transcription) {
+        const transcriptionObject = {
+          id: translation.transcription.id,
+          title: translation.transcription.title,
+          themes: translation.transcription.themes,
+          literary_genres: translation.transcription.literary_genres
+        }
+  
+        translation.transcription = transcriptionObject;
+      }
+
       return translation;
     });
+  },
+  async findOne(ctx) {
+    const { id } = ctx.params;
+
+    const entity = await strapi.services.translation.findOne({id});
+
+    const sanitizedEntity = await sanitizeEntity(entity, {
+      model: strapi.models.translation,
+    });
+
+    delete sanitizedEntity.published_at;
+    delete sanitizedEntity.created_at;
+    delete sanitizedEntity.updated_at;
+
+    if (sanitizedEntity.transcription) {
+      const transcriptionObject = {
+        id: sanitizedEntity.transcription.id,
+        title: sanitizedEntity.transcription.title,
+        themes: sanitizedEntity.transcription.themes,
+        literary_genres: sanitizedEntity.transcription.literary_genres
+      }
+
+      sanitizedEntity.transcription = transcriptionObject;
+    }
+
+    return sanitizedEntity;
   },
 };
