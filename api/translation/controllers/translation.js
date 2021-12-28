@@ -45,7 +45,7 @@ module.exports = {
       model: strapi.models.translation,
     });
 
-    sanitizedEntity.author = sanitizedEntity.author ? sanitizedEntity.author.name : null
+    sanitizedEntity.authorName = sanitizedEntity.author ? sanitizedEntity.author.name : null
 
 
     delete sanitizedEntity.published_at;
