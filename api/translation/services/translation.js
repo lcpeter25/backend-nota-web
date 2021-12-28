@@ -8,9 +8,9 @@
 module.exports = {
 
   find(params, populate) {
-    return strapi.query('translation').find(params, ["transcription", "transcription.literary_genres", "transcription.themes"]);
+    return strapi.query('translation').find(params, ["transcription", "transcription.literary_genres", "transcription.themes", 'author']);
   },
   findOne(params, populate) {
-    return strapi.query('translation').findOne(params, ["transcription", "transcription.literary_genres", "transcription.themes"]);
+    return strapi.query('translation').findOne(params, ["transcription", "transcription.literary_genres", "transcription.themes", 'author']);
   },
 };
