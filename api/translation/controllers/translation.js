@@ -15,9 +15,11 @@ module.exports = {
       const translation = sanitizeEntity(entity, {
         model: strapi.models.translation,
       });
-      
-      translation.author = translation.author ? translation.author.name : null
   
+      translation.authorName = translation.author ? translation.author.name : null
+      translation.authorId = translation.author ? translation.author.id : null
+
+      delete translation.author;
       delete translation.published_at;
       delete translation.created_at;
       delete translation.updated_at;
@@ -47,7 +49,9 @@ module.exports = {
 
     sanitizedEntity.authorName = sanitizedEntity.author ? sanitizedEntity.author.name : null
 
+    sanitizedEntity.authorId = sanitizedEntity.author ? sanitizedEntity.author.id : null
 
+    delete sanitizedEntity.author;
     delete sanitizedEntity.published_at;
     delete sanitizedEntity.created_at;
     delete sanitizedEntity.updated_at;
